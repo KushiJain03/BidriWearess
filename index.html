@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bidri Wearess – Artisanal Statement Jewelry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#" onclick="showPage('home')">Bidri <em>Wearess</em></a>
+    <ul class="nav-links">
+      <li><a href="#" id="nav-collection" onclick="showPage('collection')">Collection</a></li>
+      <!-- <li><a href="#" id="nav-contact" onclick="showPage('contact')">Contact</a></li> -->
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════
+       PAGE: HOME
+  ═══════════════════════════════════ -->
+  <div id="page-home" class="page active">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Artisanal Statement Jewelry</p>
+        <h1 class="hero-heading">Style your <em>statement,</em><br>your way</h1>
+        <p class="hero-body">Discover the timeless art of Bidriware — where 600 years of tradition meets contemporary design. Each piece tells a story of heritage, handcrafted with pure silver on black alloy.</p>
+        <a href="#" class="btn-primary" onclick="showPage('collection')">Explore Collection</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/dummy.png" alt="Model wearing Bidri choker necklace" onerror="this.style.background='#c8c3bc';this.removeAttribute('src')">
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>Handcrafted Bidriware</span><span class="dot">·</span>
+        <span>600 Years of Heritage</span><span class="dot">·</span>
+        <span>Pure Silver on Black Alloy</span><span class="dot">·</span>
+        <span>Karnataka Artisans</span><span class="dot">·</span>
+        <span>Handcrafted Bidriware</span><span class="dot">·</span>
+        <span>600 Years of Heritage</span><span class="dot">·</span>
+        <span>Pure Silver on Black Alloy</span><span class="dot">·</span>
+        <span>Karnataka Artisans</span><span class="dot">·</span>
+      </div>
+    </div>
+
+    <!-- FEATURED PIECES STRIP -->
+    <section class="featured-strip">
+      <div class="strip-header">
+        <p class="eyebrow">The Collection</p>
+        <h2 class="section-heading">Pieces that speak</h2>
+      </div>
+      <div class="strip-grid">
+        <div class="strip-card" onclick="showDetail('cuff')">
+          <div class="strip-img">
+            <img src="images/The_Eclipse_Cliff.png" alt="Eclipse Cuff" onerror="this.style.background='#b8b3ac';this.removeAttribute('src')">
+            <div class="strip-overlay"><span>View Piece</span></div>
+          </div>
+          <p class="strip-name">The NOIR MELT FRAME</p>
+          <p class="strip-mat">Bidriware · Black Alloy &amp; Pure Silver</p>
+        </div>
+        <div class="strip-card" onclick="showDetail('earrings')">
+          <div class="strip-img">
+            <img src="images/Lunar_Drops.png" alt="Lunar Drops" onerror="this.style.background='#a8a39c';this.removeAttribute('src')">
+            <div class="strip-overlay"><span>View Piece</span></div>
+          </div>
+          <p class="strip-name">Lunar Drops</p>
+          <p class="strip-mat">Bidriware · Black Alloy &amp; Pure Silver</p>
+        </div>
+        <div class="strip-card" onclick="showDetail('ring')">
+          <div class="strip-img">
+            <img src="images/Obsidian_Signet.png" alt="Obsidian Signet" onerror="this.style.background='#989390';this.removeAttribute('src')">
+            <div class="strip-overlay"><span>View Piece</span></div>
+          </div>
+          <p class="strip-name">Obsidian Signet</p>
+          <p class="strip-mat">Bidriware · Black Alloy &amp; Pure Silver</p>
+        </div>
+      </div>
+
+      <div class="strip-grid">
+        <div class="strip-card" onclick="showDetail('cuff')">
+          <div class="strip-img">
+            <img src="images/The_Eclipse_Cliff.png" alt="Eclipse Cuff" onerror="this.style.background='#b8b3ac';this.removeAttribute('src')">
+            <div class="strip-overlay"><span>View Piece</span></div>
+          </div>
+          <p class="strip-name">The Eclipse Cuff</p>
+          <p class="strip-mat">Bidriware · Black Alloy &amp; Pure Silver</p>
+        </div>
+        <div class="strip-card" onclick="showDetail('earrings')">
+          <div class="strip-img">
+            <img src="images/Lunar_Drops.png" alt="Lunar Drops" onerror="this.style.background='#a8a39c';this.removeAttribute('src')">
+            <div class="strip-overlay"><span>View Piece</span></div>
+          </div>
+          <p class="strip-name">Lunar Drops</p>
+          <p class="strip-mat">Bidriware · Black Alloy &amp; Pure Silver</p>
+        </div>
+        <div class="strip-card" onclick="showDetail('ring')">
+          <div class="strip-img">
+            <img src="images/Obsidian_Signet.png" alt="Obsidian Signet" onerror="this.style.background='#989390';this.removeAttribute('src')">
+            <div class="strip-overlay"><span>View Piece</span></div>
+          </div>
+          <p class="strip-name">Obsidian Signet</p>
+          <p class="strip-mat">Bidriware · Black Alloy &amp; Pure Silver</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CRAFT SECTION
+    <section class="craft-section">
+      <div class="craft-image">
+        <img src="images/craft.jpg" alt="Bidriware craftsmanship" onerror="this.style.background='#c0bbb4';this.removeAttribute('src')">
+      </div>
+      <div class="craft-text">
+        <p class="eyebrow">The Art</p>
+        <h2 class="craft-heading">A craft born in<br><em>Karnataka</em></h2>
+        <p class="craft-body">Bidriware originates from Bidar, Karnataka — a centuries-old metalworking tradition where craftsmen hand-inlay sterling silver into a matt-black zinc alloy. Each piece is unique, carrying the marks of human hands and centuries of knowledge.</p>
+        <a href="#" class="btn-secondary" onclick="showPage('contact')">Commission a Piece</a>
+      </div>
+    </section> -->
+
+  </div><!-- /page-home -->
+
+
+  <!-- ═══════════════════════════════════
+       PAGE: COLLECTION
+  ═══════════════════════════════════ -->
+  <div id="page-collection" class="page">
+    <div class="collection-hero">
+      <p class="eyebrow center">The Collection</p>
+      <h2 class="section-heading center">Each piece, a story</h2>
+    </div>
+    <div class="collection-grid">
+
+      <div class="product-card" onclick="showDetail('cuff')">
+        <div class="product-img">
+          <img src="images/The_Eclipse_Cliff.png" alt="Eclipse Cuff" onerror="this.style.background='#b8b3ac';this.removeAttribute('src')">
+          <div class="product-overlay"><span>View Piece</span></div>
+        </div>
+        <p class="product-name">The NOIR MELT FRAME</p>
+        <p class="product-mat">Bidriware · Black Alloy &amp; Pure Silver</p>
+      </div>
+
+      <div class="product-card" onclick="showDetail('earrings')">
+        <div class="product-img">
+          <img src="images/Lunar_Drops.png" alt="Lunar Drops" onerror="this.style.background='#a8a39c';this.removeAttribute('src')">
+          <div class="product-overlay"><span>View Piece</span></div>
+        </div>
+        <p class="product-name">Lunar Drops</p>
+        <p class="product-mat">Bidriware · Black Alloy &amp; Pure Silver</p>
+      </div>
+
+      <div class="product-card" onclick="showDetail('ring')">
+        <div class="product-img">
+          <img src="images/Obsidian_Signet.png" alt="Obsidian Signet" onerror="this.style.background='#989390';this.removeAttribute('src')">
+          <div class="product-overlay"><span>View Piece</span></div>
+        </div>
+        <p class="product-name">Obsidian Signet</p>
+        <p class="product-mat">Bidriware · Black Alloy &amp; Pure Silver</p>
+      </div>
+
+      <div class="product-card" onclick="showDetail('cuff')">
+        <div class="product-img">
+          <img src="images/The_Eclipse_Cliff.png" alt="Eclipse Cuff" onerror="this.style.background='#b8b3ac';this.removeAttribute('src')">
+          <div class="product-overlay"><span>View Piece</span></div>
+        </div>
+        <p class="product-name">The NOIR MELT FRAME</p>
+        <p class="product-mat">Bidriware · Black Alloy &amp; Pure Silver</p>
+      </div>
+
+      <div class="product-card" onclick="showDetail('earrings')">
+        <div class="product-img">
+          <img src="images/Lunar_Drops.png" alt="Lunar Drops" onerror="this.style.background='#a8a39c';this.removeAttribute('src')">
+          <div class="product-overlay"><span>View Piece</span></div>
+        </div>
+        <p class="product-name">Lunar Drops</p>
+        <p class="product-mat">Bidriware · Black Alloy &amp; Pure Silver</p>
+      </div>
+
+      <div class="product-card" onclick="showDetail('ring')">
+        <div class="product-img">
+          <img src="images/Obsidian_Signet.png" alt="Obsidian Signet" onerror="this.style.background='#989390';this.removeAttribute('src')">
+          <div class="product-overlay"><span>View Piece</span></div>
+        </div>
+        <p class="product-name">Obsidian Signet</p>
+        <p class="product-mat">Bidriware · Black Alloy &amp; Pure Silver</p>
+      </div>
+
+    </div>
+  </div><!-- /page-collection -->
+
+
+  <!-- ═══════════════════════════════════
+       PAGE: PRODUCT DETAIL
+  ═══════════════════════════════════ -->
+  <div id="page-detail" class="page">
+    <a class="back-link" href="#" onclick="goBack()">&#8249; Back to Collection</a>
+
+    <div class="detail-layout">
+      <div class="detail-image-wrap">
+        <img id="detail-img" src="" alt="">
+      </div>
+      <div class="detail-info">
+        <p class="detail-eyebrow" id="detail-eyebrow">Bidriware · Black Alloy &amp; Pure Silver</p>
+        <h2 class="detail-title" id="detail-title">The NOIR MELT FRAME</h2>
+        <p class="detail-desc" id="detail-desc">A bold statement piece featuring intricate silver inlay work on a matte black alloy base.</p>
+        <hr class="detail-divider">
+        <div class="detail-cols">
+          <div>
+            <p class="detail-col-label">The Story</p>
+            <p class="detail-story" id="detail-story">Inspired by the celestial dance of sun and moon, this cuff celebrates the interplay of light and shadow.</p>
+          </div>
+          <div>
+            <p class="detail-col-label">Perfect For</p>
+            <ul class="detail-for-list" id="detail-for"></ul>
+          </div>
+        </div>
+
+        <!-- STYLE TABS -->
+        <div class="style-section">
+          <h3 class="style-heading">Four Ways to Wear It</h3>
+          <div class="style-tabs">
+            <button class="style-tab active" onclick="switchTab(this,'chic')">Chic</button>
+            <button class="style-tab" onclick="switchTab(this,'elegant')">Elegant</button>
+            <button class="style-tab" onclick="switchTab(this,'casual')">Casual</button>
+            <button class="style-tab" onclick="switchTab(this,'bold')">Bold</button>
+          </div>
+          <div id="tab-chic" class="style-panel active">
+            <div class="style-panel-img">
+              <img src="images/chic.jpg" alt="Chic look" onerror="this.style.background='#c0553040';this.removeAttribute('src')">
+            </div>
+            <div class="style-panel-text-wrap">
+              <p class="style-panel-label">The Chic Look</p>
+              <p class="style-panel-text">Pair this with a crisp white oversized shirt or a structured blazer for an effortless, chic look.</p>
+            </div>
+          </div>
+          <div id="tab-elegant" class="style-panel">
+            <div class="style-panel-img">
+              <img src="images/elegant.jpg" alt="Elegant look" onerror="this.style.background='#2a2a2a50';this.removeAttribute('src')">
+            </div>
+            <div class="style-panel-text-wrap">
+              <p class="style-panel-label">The Elegant Look</p>
+              <p class="style-panel-text">Layer over a silk evening gown or a draped saree for an elevated, gallery-ready statement.</p>
+            </div>
+          </div>
+          <div id="tab-casual" class="style-panel">
+            <div class="style-panel-img">
+              <img src="images/casual.jpg" alt="Casual look" onerror="this.style.background='#d4c9b850';this.removeAttribute('src')">
+            </div>
+            <div class="style-panel-text-wrap">
+              <p class="style-panel-label">The Casual Look</p>
+              <p class="style-panel-text">Style with wide-leg trousers and a simple tee — let the piece do the talking on a relaxed day out.</p>
+            </div>
+          </div>
+          <div id="tab-bold" class="style-panel">
+            <div class="style-panel-img">
+              <img src="images/signet_ring.jpg" alt="Bold look" onerror="this.style.background='#1a1a1a60';this.removeAttribute('src')">
+            </div>
+            <div class="style-panel-text-wrap">
+              <p class="style-panel-label">The Bold Look</p>
+              <p class="style-panel-text">Stack it with other Bidri pieces for a maximalist, fashion-forward ensemble that commands attention.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn-primary" onclick="showPage('contact')">Inquire About This Piece</a>
+      </div>
+    </div>
+  </div><!-- /page-detail -->
+
+
+  <!-- ═══════════════════════════════════
+       PAGE: CONTACT
+  ═══════════════════════════════════ -->
+  <!-- <div id="page-contact" class="page">
+    <section class="contact-section">
+      <div class="contact-inner">
+        <p class="eyebrow center"><span>Get in Touch</span></p>
+        <h2 class="contact-heading">Let's Create <em>Together</em></h2>
+        <p class="contact-sub">Interested in a piece? Have questions about customization? We'd love to hear from you. Each inquiry receives our personal attention.</p>
+
+        <div id="contact-form-wrap">
+          <div class="field">
+            <label class="field-label" for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Jane Doe">
+          </div>
+          <div class="field">
+            <label class="field-label" for="email">Email Address</label>
+            <input type="email" id="email" placeholder="jane@example.com">
+          </div>
+          <div class="field">
+            <label class="field-label" for="message">Your Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us about your interest in our pieces..."></textarea>
+          </div>
+          <button class="submit-btn" onclick="submitForm()">Send Inquiry</button>
+        </div>
+        <div class="submit-success" id="submit-success">
+          <p>Thank you. We'll be in touch soon.</p>
+        </div>
+      </div>
+    </section>
+  </div>/page-contact -->
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Bidri <em>Wearess</em></div>
+    <p class="footer-copy">© 2026 Bidri Wearess. All rights reserved.</p>
+    <p class="footer-tagline">Handcrafted in India</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

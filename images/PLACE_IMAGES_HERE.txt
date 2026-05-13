@@ -1,0 +1,19 @@
+Add your product photos here with these exact filenames:
+
+hero.jpg            — Hero section model photo (portrait, tall)
+eclipse-cuff.jpg    — The Eclipse Cuff bracelet
+lunar-drops.jpg     — Lunar Drops earrings
+obsidian-signet.jpg — Obsidian Signet ring
+shadow-choker.jpg   — The Shadow Choker necklace
+zenith-pendant.jpg  — Zenith Pendant
+dusk-studs.jpg      — Dusk Studs earrings
+craft.jpg           — Artisan crafting / process photo
+style-chic.jpg      — Chic styling photo
+style-elegant.jpg   — Elegant styling photo
+style-casual.jpg    — Casual styling photo
+style-bold.jpg      — Bold styling photo
+
+Recommended sizes:
+- Product images: 800×1000px (4:5 ratio)
+- Hero image: 900×1100px (portrait)
+- Style images: 600×800px
