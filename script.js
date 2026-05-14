@@ -103,8 +103,8 @@ function showDetail(productKey) {
   // reset style tabs
   document.querySelectorAll('.style-tab').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.style-panel').forEach(p => p.classList.remove('active'));
-  document.querySelector('.style-tab').classList.add('active');
-  document.getElementById('tab-chic').classList.add('active');
+  document.querySelector('.style-tab')?.classList.add('active');
+  document.getElementById('tab-elegant')?.classList.add('active');
 
   showPage('detail');
 }
