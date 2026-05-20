@@ -5,7 +5,7 @@
 // ── PRODUCT DATA ──────────────────────────────────────────
 const products = {
   cuff: {
-    img: 'images/The_Eclipse_Cliff.png',
+    img: 'images/The_NOIR_MELT_FRAME.jpeg',
     eyebrow: 'Bidriware · Black Alloy & Pure Silver',
     title: 'The NOIR MELT FRAME',
     desc: 'A bold statement piece featuring intricate silver inlay work on a matte black alloy base. The Eclipse Cuff embodies the timeless artistry of traditional Bidriware craftsmanship.',
@@ -21,25 +21,25 @@ const products = {
     for: ['Date Nights', 'Festive Occasions', 'Wedding Season', 'Everyday Elegance']
   },
   ring: {
-    img: 'images/Obsidian_Signet.png',
+    img: 'images/Armlet.jpg',
     eyebrow: 'Bidriware · Black Alloy & Pure Silver',
-    title: 'Obsidian Signet',
+    title: 'Armlet',
     desc: 'A wide-band signet ring featuring dense arabesque inlay in pure silver. Substantial in feel, singular in presence — a piece designed to become a signature.',
     story: 'Rooted in the Mughal aesthetic that originally inspired Bidriware, the Obsidian Signet carries centuries of courtly influence. Worn as a mark of distinction across cultures and eras.',
     for: ['Power Dressing', 'Board Meetings', 'Cultural Events', 'Collector\'s Piece']
   },
   necklace: {
-    img: 'images/The_Eclipse_Cliff.png',
+    img: 'images/Set_of_ring.jpeg',
     eyebrow: 'Bidriware · Black Alloy & Pure Silver',
-    title: 'The Shadow Choker',
+    title: 'Set of Ring',
     desc: 'A structured multi-strand choker that commands attention. Geometric silver channels run across the matte black base in a precise, architectural pattern.',
     story: 'The Shadow Choker was conceived to dress the neckline like architecture — bold, intentional, and geometric. It references the lattice windows of Bidar\'s ancient fort.',
     for: ['Red Carpet', 'Editorial Shoots', 'Art Openings', 'Statement Evenings']
   },
   pendant: {
-    img: 'images/Lunar_Drops.png',
+    img: 'images/Bracelet.jpeg',
     eyebrow: 'Bidriware · Black Alloy & Pure Silver',
-    title: 'Zenith Pendant',
+    title: 'Bracelet',
     desc: 'A single suspended medallion with radial silver inlay, hung on a fine oxidised silver chain. Quiet power in a single piece.',
     story: 'The Zenith Pendant captures the idea of a singular point — a compass needle stilled. Its radial motif has been used in Bidriware for centuries as a symbol of completeness.',
     for: ['Everyday Wear', 'Office to Evening', 'Gifting', 'Layering Pieces']
