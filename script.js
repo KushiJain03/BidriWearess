@@ -6,6 +6,7 @@
 const products = {
   cuff: {
     img: 'images/The_NOIR_MELT_FRAME.jpeg',
+    styleImg: 'images/The_NOIR_MELT_FRAME.jpeg',
     eyebrow: 'Bidriware · Black Alloy & Pure Silver',
     title: 'The NOIR MELT FRAME',
     desc: 'A bold statement piece featuring intricate silver inlay work on a matte black alloy base. The Eclipse Cuff embodies the timeless artistry of traditional Bidriware craftsmanship.',
@@ -14,6 +15,7 @@ const products = {
   },
   earrings: {
     img: 'images/Lunar_Drops.png',
+    styleImg: 'images/Lunar_Drops.png',
     eyebrow: 'Bidriware · Black Alloy & Pure Silver',
     title: 'Lunar Drops',
     desc: 'Delicate teardrop earrings adorned with hand-carved floral motifs. Each pair is individually crafted — no two are identical — making every piece truly one of a kind.',
@@ -22,6 +24,7 @@ const products = {
   },
   ring: {
     img: 'images/Armlet.jpg',
+    styleImg: 'images/Armlet_dummy.jpeg',
     eyebrow: 'Bidriware · Black Alloy & Pure Silver',
     title: 'Armlet',
     desc: 'A wide-band signet ring featuring dense arabesque inlay in pure silver. Substantial in feel, singular in presence — a piece designed to become a signature.',
@@ -30,6 +33,7 @@ const products = {
   },
   necklace: {
     img: 'images/Set_of_ring.jpeg',
+    styleImg: 'images/SetofRing_dummy.jpeg',
     eyebrow: 'Bidriware · Black Alloy & Pure Silver',
     title: 'Set of Ring',
     desc: 'A structured multi-strand choker that commands attention. Geometric silver channels run across the matte black base in a precise, architectural pattern.',
@@ -38,6 +42,7 @@ const products = {
   },
   pendant: {
     img: 'images/Bracelet.jpeg',
+    styleImg: 'images/Braclet_dummy.jpeg',
     eyebrow: 'Bidriware · Black Alloy & Pure Silver',
     title: 'Bracelet',
     desc: 'A single suspended medallion with radial silver inlay, hung on a fine oxidised silver chain. Quiet power in a single piece.',
@@ -46,6 +51,7 @@ const products = {
   },
   studs: {
     img: 'images/Obsidian_Signet.png',
+    styleImg: 'images/obsidian-signet-style.jpg',
     eyebrow: 'Bidriware · Black Alloy & Pure Silver',
     title: 'Dusk Studs',
     desc: 'Small, perfectly formed square studs with micro-inlay detail. The subtlest entry into the world of Bidriware — and often the most beloved.',
@@ -91,6 +97,17 @@ function showDetail(productKey) {
   document.getElementById('detail-title').textContent   = p.title;
   document.getElementById('detail-desc').textContent    = p.desc;
   document.getElementById('detail-story').textContent   = p.story;
+
+  const styleImg = document.getElementById('style-img');
+  if (styleImg) {
+    styleImg.style.background = '';
+    styleImg.src = p.styleImg || 'images/elegant.jpg';
+    styleImg.alt = `${p.title} elegant look`;
+    styleImg.onerror = function() {
+      this.style.background = '#2a2a2a50';
+      this.removeAttribute('src');
+    };
+  }
 
   const forList = document.getElementById('detail-for');
   forList.innerHTML = '';
