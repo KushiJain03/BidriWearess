@@ -5,7 +5,7 @@
 // ── PRODUCT DATA ──────────────────────────────────────────
 const products = {
   cuff: {
-    img: 'images/The_NOIR_MELT_FRAME.jpeg',
+    img: 'images/Melt_Frame_Dummy.jpeg',
     styleImg: 'images/The_NOIR_MELT_FRAME.jpeg',
     eyebrow: 'Bidriware · Black Alloy & Pure Silver',
     title: 'The NOIR MELT FRAME',
@@ -14,10 +14,10 @@ const products = {
     for: ['Evening Events', 'Art Gallery Openings', 'Cocktail Parties', 'Statement Styling']
   },
   earrings: {
-    img: 'images/Lunar_Drops.png',
-    styleImg: 'images/Lunar_Drops.png',
+    img: 'images/Necklace.jpeg',
+    styleImg: 'images/Necklace_Dummy.jpeg',
     eyebrow: 'Bidriware · Black Alloy & Pure Silver',
-    title: 'Lunar Drops',
+    title: 'Necklace',
     desc: 'Delicate teardrop earrings adorned with hand-carved floral motifs. Each pair is individually crafted — no two are identical — making every piece truly one of a kind.',
     story: 'The Lunar Drops draw inspiration from moonlit gardens — intricate blossoms suspended in the dark sky. Artisans spend up to three days on a single pair, ensuring every petal is perfection.',
     for: ['Date Nights', 'Festive Occasions', 'Wedding Season', 'Everyday Elegance']
